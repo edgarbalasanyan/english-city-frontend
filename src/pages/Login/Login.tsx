@@ -1,6 +1,6 @@
 import "../../sass/_typography.scss";
 import styles from "./Login.module.scss";
-import clsx from "classnames"
+import clsx from "classnames";
 import { Outlet } from "react-router-dom";
 
 export const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
@@ -12,9 +12,20 @@ const Login = () => {
   return (
     <div className={styles.loginPageContainer}>
       <div className={styles.image}></div>
-      <div className={clsx(styles.iconContainer,"text")}>Logo</div>
+      <div className={clsx(styles.iconContainer, "text")}>Logo</div>
       <div className={styles.loginFormContainer}>
         <Outlet />
+      </div>
+      <div className={styles.loginFooter}>
+        <a href="#" className="text">
+          About us
+        </a>
+        <a href="#" className="text">
+          Help
+        </a>
+        <a href="#" className="text">
+          Contact
+        </a>
       </div>
     </div>
   );

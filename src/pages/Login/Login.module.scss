@@ -29,3 +29,10 @@
   background-image: url("../../../public/3dCity.png");
   background-size: cover;
 }
+.loginFooter {
+  position: absolute;
+  bottom: 1%;
+  left: 45%;
+  display: flex;
+  gap: 1rem;
+}
